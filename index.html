@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary SEO -->
+  <title>John Bampton - John Bampton · Software Engineer &amp; Open-Source Maintainer</title>
+  <meta name="description" content="John Bampton - senior software engineer and full-time open-source maintainer with 25+ years of experience. Event hosting, boardgames, books, card games, chess variants, and mathematics.">
+  <meta name="author" content="John Bampton">
+  <meta name="keywords" content="John Bampton, software engineer, Brisbane, open source, GitHub, event hosting, boardgames, books, card games, chess variants, mathematics">
+  <meta name="theme-color" content="#05080d">
+  <link rel="canonical" href="https://john-bampton.github.io/john.com/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="John Bampton - Software Engineer &amp; Open-Source Maintainer">
+  <meta property="og:description" content="John Bampton - senior software engineer and full-time open-source maintainer with 25+ years of experience. Event hosting, boardgames, books, card games, chess variants, and mathematics.">
+  <meta property="og:url" content="https://jbampton.github.io/">
+  <meta property="og:site_name" content="John Bampton - johnbampton.os">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="John Bampton - Software Engineer &amp; Open-Source Maintainer">
+  <meta name="twitter:description" content="John Bampton - senior software engineer and full-time open-source maintainer with 25+ years of experience. Event hosting, boardgames, books, card games, chess variants, and mathematics.">
+
+  <!-- Favicon (inline SVG, no external dependency) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2305080d'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='52' font-weight='bold' fill='%2300ff9c' text-anchor='middle'%3E%26gt;_%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind (CDN only) + external config (no inline scripts) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "John Bampton",
+    "alternateName": "John Bampton",
+    "url": "https://jbampton.github.io/",
+    "email": "mailto:jbampton@gmail.com",
+    "jobTitle": "Senior Software Engineer, System Architect, Open-Source Maintainer",
+    "description": "John Bampton - senior software engineer and full-time open-source maintainer with 25+ years of experience. Event hosting, boardgames, books, card games, chess variants, and mathematics.",
+    "knowsAbout": ["Software Engineering","Chess","Management","Open Source","GitHub","Books","Boardgames","Card games","Mathematics","Chess Variants"],
+    "worksFor": { "@type": "Organization", "name": "john-bampton" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "The Game of Life" },
+    "sameAs": [
+      "https://github.com/jbampton",
+      "https://gitlab.com/johnbampton",
+      "https://www.youtube.com/@johnbampton"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== TOP BAR (OS menu bar) ===================== -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="index.html" aria-label="John Bampton - home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__name mono"><b>committer</b><span>@</span><b>asf</b><span>:~$</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">home</a>
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+      </nav>
+
+      <div class="topbar__tools">
+        <button class="cmd-trigger" data-action="palette" aria-label="Open command palette">
+          <span aria-hidden="true">⌘</span><span class="cmd-label">command</span><kbd>Ctrl K</kbd>
+        </button>
+        <button class="icon-btn" data-action="terminal" aria-label="Open terminal" title="Terminal ( ` )">
+          <span class="mono" aria-hidden="true">_</span>
+        </button>
+        <button class="icon-btn" data-action="theme" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span aria-hidden="true">◑</span>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+          <span aria-hidden="true">≡</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero__grid">
+        <!-- left: identity -->
+        <div>
+          <div class="win" id="js-only" aria-hidden="true">
+            <div class="win__bar">
+              <span class="win__dots"><i></i><i></i><i></i></span>
+              <span class="win__title">— bash - <span class="text-green">johnbampton.os</span> - 80×24</span>
+            </div>
+            <div class="win__body">
+              <div class="term" id="boot" aria-hidden="true">
+                <span class="term__line boot-line"><span class="muted">[ 0.001 ]</span> booting <span class="text-green">johnbampton.os</span> kernel 6.x…</span>
+                <span class="term__line boot-line"><span class="muted">[ 0.014 ]</span> mounting /dev/skills <span class="ok">[ OK ]</span></span>
+                <span class="term__line boot-line"><span class="muted">[ 0.052 ]</span> loading 25+ years of experience <span class="ok">[ OK ]</span></span>
+                <span class="term__line boot-line"><span class="muted">[ 0.097 ]</span> syncing github://jbampton repositories <span class="ok">[ OK ]</span></span>
+                <span class="term__line boot-line"><span class="muted">[ 0.140 ]</span> starting open-source daemon <span class="ok">[ OK ]</span></span>
+                <span class="term__line boot-line"><span class="prompt-user">john@bampton</span>:<span class="prompt-path">~</span>$ whoami</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__identity">
+            <p class="section-head__kicker mono">root@asf</p>
+            <h1 id="hero-title">John<br><span class="alias">&gt; Bampton_</span></h1>
+            <p class="hero__role mono">
+              <span class="text-dim">$</span> role --now <span class="typed" id="typed"
+                data-words='["Senior Software Engineer","Manager","Open-Source Maintainer","Scrum Master","Event Host","Team Leader"]'>Open Source Contributor</span><span class="caret">_</span>
+            </p>
+            <p class="hero__statement">
+              I run events, lead software teams and work on large distributed projects - <b>Apache CloudStack, Apache OpenOffice, Apache Sedona</b> - and I ship it in the open.
+              25+ years of experience with 10+ years of relentless engineering,
+              thousands of commits, and an obsession with doing it right.
+            </p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="https://github.com/jbampton" target="_blank" rel="noopener">⌥ github.com/jbampton</a>
+              <a class="btn btn--ghost" href="projects.html">▸ view projects</a>
+              <button class="btn btn--ghost" data-action="terminal">_ launch terminal</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- right: live stats -->
+        <aside aria-label="GitHub stats at a glance">
+          <div class="win">
+            <div class="win__bar">
+              <span class="win__dots"><i></i><i></i><i></i></span>
+              <span class="win__title">~/stats <span class="text-green">●</span> live</span>
+            </div>
+            <div class="win__body">
+              <div class="stats">
+                <div class="stat"><div class="stat__num"><span data-count="15" data-suffix="+">25+</span></div><div class="stat__label">Years coding</div></div>
+                <div class="stat"><div class="stat__num"><span data-count="900" data-suffix="+">1000+</span></div><div class="stat__label">Repositories</div></div>
+              </div>
+              <div class="gh-embed">
+                <img loading="lazy" decoding="async" alt="John Bampton GitHub stats"
+                  src="https://github-readme-stats.vercel.app/api?username=jbampton&show_icons=true&hide_border=true&theme=dark&bg_color=0c131d&title_color=00ff9c&icon_color=2dd4ff&text_color=cdd9e5">
+                <img loading="lazy" decoding="async" alt="John Bampton top languages"
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=jbampton&layout=compact&hide_border=true&theme=dark&bg_color=0c131d&title_color=00ff9c&text_color=cdd9e5&langs_count=8">
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="section-divider wrap" role="presentation"></div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section wrap reveal" id="about" aria-labelledby="about-h">
+      <div class="section-head">
+        <span class="section-head__kicker">identity</span>
+        <h2 id="about-h">A real computer engineer - in the open.</h2>
+        <p>From testing and systems development to web platforms and algorithm design. Coding since childhood - and it's still a big part of who I am.</p>
+      </div>
+      <div class="about__grid">
+        <div class="win">
+          <div class="win__bar"><span class="win__dots"><i></i><i></i><i></i></span><span class="win__title">~/about/identity.ts</span></div>
+          <div class="win__body">
+            <pre class="code-block"><span class="c">// philosophy.ts - what drives the work</span>
+<span class="k">const</span> <span class="n">johnbampton</span> = {
+  <span class="f">mission</span>:   <span class="s">"build the foundations others rely on"</span>,
+  <span class="f">principle</span>: <span class="s">"talk is cheap - show me the code"</span>,
+  <span class="f">focus</span>:     [<span class="s">"asf"</span>, <span class="s">"management"</span>, <span class="s">"web"</span>, <span class="s">"games"</span>],
+  <span class="f">openSource</span>: <span class="k">true</span>,   <span class="c">// full-time, since 2021</span>
+  <span class="f">shipping</span>:   <span class="k">async</span> () =&gt; <span class="k">await</span> <span class="n">forever</span>(),
+};</pre>
+            <div class="prose" style="margin-top:1.2rem">
+              <p>I'm an Australian open-source software developer, team leader, and prominent contributor to several major global open-source ecosystems.
+                Based in Brisbane, mainly a self-educated programmer and autodidact, I have a love of books, cards, games and knowledge sharing.
+                Running large virtual teams, doing live event hosting and marketing and building communities is what I do best.</p>
+            </div>
+          </div>
+        </div>
+        <div class="win">
+          <div class="win__bar"><span class="win__dots"><i></i><i></i><i></i></span><span class="win__title">~/about/whoami --verbose</span></div>
+          <div class="win__body">
+            <div class="facts">
+              <div class="fact"><span class="fact__k">alias</span><span class="fact__v">John Bampton</span></div>
+              <div class="fact"><span class="fact__k">location</span><span class="fact__v">Brisbane, Australia · remote-friendly</span></div>
+              <div class="fact"><span class="fact__k">current</span><span class="fact__v">Open-Source Maintainer, Event Host and Community Leader</span></div>
+              <div class="fact"><span class="fact__k">institutions</span><span class="fact__v">GitHub · Codewars</span></div>
+              <div class="fact"><span class="fact__k">interests</span><span class="fact__v">Boardgames · Books · Cards · Chess variants · Crosswords · Knowledge Sharing · Teaching</span></div>
+              <div class="fact"><span class="fact__k">research</span><span class="fact__v">Computer Science · Philosophy</span></div>
+              <div class="fact"><span class="fact__k">languages</span><span class="fact__v">English</span></div>
+              <div class="fact"><span class="fact__k">off-keyboard</span><span class="fact__v">XBox · Basketball · Fashion · Music</span></div>
+              <div class="fact"><span class="fact__k">membership</span><span class="fact__v">Apache Software Foundation Committer · Tasmania Devils Football Club</span></div>
+              <div class="fact"><span class="fact__k">links</span><span class="fact__v"><a href="https://github.com/jbampton" target="_blank" rel="noopener">github</a> · <a href="https://gitlab.com/johnbampton" target="_blank" rel="noopener">gitlab</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GITHUB / OPEN SOURCE ===================== -->
+    <section class="section wrap reveal" id="opensource" aria-labelledby="os-h">
+      <div class="section-head">
+        <span class="section-head__kicker">git log --author="John Bampton"</span>
+        <h2 id="os-h">Open source is the day job.</h2>
+        <p id="repo-note">Top repositories pulled live from the GitHub API - with a curated fallback if the network is quiet.</p>
+      </div>
+
+      <div class="win" style="margin-bottom:1.4rem">
+        <div class="win__bar"><span class="win__dots"><i></i><i></i><i></i></span><span class="win__title">~/contributions --graph (sample)</span></div>
+        <div class="win__body">
+          <div class="heatmap" id="heatmap" aria-hidden="true"></div>
+          <p class="mono text-dim" style="font-size:.74rem;margin-top:.8rem">// ~12 years of consistent contribution · ranked top #100 most active GitHub user Australia (2026)</p>
+        </div>
+      </div>
+
+      <div class="repo-grid" id="repo-grid" aria-live="polite">
+        <article class="repo">
+          <div class="repo__top">
+            <span class="lang-dot"></span>
+            <a class="repo__name" href="https://github.com/apache/cloudstack" target="_blank" rel="noopener">CloudStack</a>
+          </div>
+          <p class="repo__desc">Open-source cloud computing platform for creating, managing, and deploying public and private cloud infrastructure.</p>
+          <div class="repo__meta">
+            <span>★ cloud</span>
+            <span><i class="lang-dot"></i>Java</span>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="repo__top">
+            <span class="lang-dot"></span>
+            <a class="repo__name" href="https://github.com/apache/openoffice" target="_blank" rel="noopener">OpenOffice</a>
+          </div>
+          <p class="repo__desc">The official repository for Apache OpenOffice, the leading open-source office software suite.</p>
+          <div class="repo__meta">
+            <span>★ productivity</span>
+            <span><i class="lang-dot"></i>C++</span>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="repo__top">
+            <span class="lang-dot"></span>
+            <a class="repo__name" href="https://github.com/apache/sedona" target="_blank" rel="noopener">Sedona</a>
+          </div>
+          <p class="repo__desc">A cluster computing system for processing large-scale spatial data, powered by Apache Spark and Flink.</p>
+          <div class="repo__meta">
+            <span>★ geospatial</span>
+            <span><i class="lang-dot"></i>Java</span>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="repo__top">
+            <span class="lang-dot"></span>
+            <a class="repo__name" href="https://github.com/mruby/mruby" target="_blank" rel="noopener">mruby</a>
+          </div>
+          <p class="repo__desc">The lightweight implementation of the Ruby language complying to part of the ISO standard.</p>
+          <div class="repo__meta">
+            <span>★ language</span>
+            <span><i class="lang-dot"></i>C</span>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="repo__top">
+            <span class="lang-dot"></span>
+            <a class="repo__name" href="https://github.com/nextcommunity/nextcommunity.github.io" target="_blank" rel="noopener">nextcommunity.github.io</a>
+          </div>
+          <p class="repo__desc">The community portal, documentation site, and landing page ecosystem for Next community projects.</p>
+          <div class="repo__meta">
+            <span>★ community</span>
+            <span><i class="lang-dot"></i>HTML</span>
+          </div>
+        </article>
+
+        <article class="repo">
+          <div class="repo__top">
+            <span class="lang-dot"></span>
+            <a class="repo__name" href="https://github.com/jbampton" target="_blank" rel="noopener">…1000+ more</a>
+          </div>
+          <p class="repo__desc">Compilers, parsers, bots, data tools, web apps and experiments.</p>
+          <div class="repo__meta">
+            <span>★ explore</span>
+            <span><i class="lang-dot"></i>polyglot</span>
+          </div>
+        </article>
+      </div>
+
+      <p style="margin-top:1.2rem"><a class="btn btn--ghost" href="https://github.com/jbampton?tab=repositories" target="_blank" rel="noopener">▸ browse all repositories</a></p>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section wrap reveal" id="projects" aria-labelledby="proj-h">
+      <div class="section-head">
+        <span class="section-head__kicker">~/projects</span>
+        <h2 id="proj-h">Selected work &amp; products.</h2>
+        <p>A slice of projects - languages, frameworks and products</p>
+      </div>
+      <div class="proj-grid">
+        <article class="proj">
+          <div class="proj__head"><span class="fname mono">one-language/</span><span class="status status--active">active</span></div>
+          <div class="proj__body">
+            <h3 class="proj__name"><a href="https://github.com/One-Language" target="_blank" rel="noopener">ONE Language</a></h3>
+            <p class="proj__desc">A from-scratch open-source system programming language and compiler - focused on reliability, efficiency and performance.</p>
+            <div class="tags"><span class="tag">Management</span><span class="tag">Developer Relations</span><span class="tag">Team Leader</span><span class="tag">Scrum Master</span></div>
+          </div>
+        </article>
+      </div>
+      <p style="margin-top:1.4rem"><a class="btn btn--ghost" href="projects.html">▸ full project archive</a></p>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <!--
+    <section class="section wrap reveal" id="skills" aria-labelledby="skills-h">
+      <div class="section-head">
+        <span class="section-head__kicker">cat /etc/stack</span>
+        <h2 id="skills-h">The stack.</h2>
+        <p>Technologies I've shipped production work with - not a wishlist.</p>
+      </div>
+      <div class="skill-cats">
+        <div class="skill-cat">
+          <div class="skill-cat__title mono">languages</div>
+          <div class="chips">
+            <span class="chip">C</span><span class="chip">Go</span><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">PHP 8.2</span><span class="chip">Ruby</span><span class="chip">Bash</span><span class="chip">C++</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat__title mono">frameworks</div>
+          <div class="chips">
+            <span class="chip">Laravel</span><span class="chip">Express.js</span><span class="chip">NestJS</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Vue</span><span class="chip">Nuxt</span><span class="chip">Gin</span><span class="chip">Fiber</span><span class="chip">Flask</span><span class="chip">Rails</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat__title mono">data &amp; search</div>
+          <div class="chips">
+            <span class="chip">PostgreSQL</span><span class="chip">MySQL/MariaDB</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">ClickHouse</span><span class="chip">Cassandra</span><span class="chip">Neo4j</span><span class="chip">SQLite</span><span class="chip">ElasticSearch</span><span class="chip">MeiliSearch</span><span class="chip">Typesense</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat__title mono">systems &amp; devops</div>
+          <div class="chips">
+            <span class="chip">GNU/Linux</span><span class="chip">Arch</span><span class="chip">FreeBSD</span><span class="chip">Docker</span><span class="chip">Nginx</span><span class="chip">Apache</span><span class="chip">GitHub Actions</span><span class="chip">GitLab CI/CD</span><span class="chip">WHM/cPanel</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat__title mono">architecture</div>
+          <div class="chips">
+            <span class="chip">Microservices</span><span class="chip">Distributed Systems</span><span class="chip">REST APIs</span><span class="chip">Clean Architecture</span><span class="chip">Caching</span><span class="chip">High-Traffic</span><span class="chip">Auth (JWT/OAuth)</span>
+          </div>
+        </div>
+        <div class="skill-cat">
+          <div class="skill-cat__title mono">mathematics</div>
+          <div class="chips">
+            <span class="chip">Group Theory</span><span class="chip">Graph Theory</span><span class="chip">Cryptography</span><span class="chip">Combinatorics</span><span class="chip">Coding Theory</span><span class="chip">GAP</span><span class="chip">SageMath</span><span class="chip">LaTeX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- ===================== EXPERIENCE TIMELINE ===================== -->
+    <section class="section wrap reveal" id="experience" aria-labelledby="exp-h">
+      <div class="section-head">
+        <span class="section-head__kicker">git log --oneline --career</span>
+        <h2 id="exp-h">Experience &amp; trajectory.</h2>
+        <p>Leadership, scale and impact - across products, research and the open-source world.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-item__date">January 2025 - Present · Brisbane</div>
+          <div class="tl-item__role">Apache Committer on Apache OpenOffice</div>
+          <div class="tl-item__desc">I'm the newest Committer on OpenOffice providing support and small patches.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item__date">November 2024 - Present · Brisbane</div>
+          <div class="tl-item__role">Apache Committer on Apache Sedona</div>
+          <div class="tl-item__org"><a href="https://sedona.apache.org" target="_blank" rel="noopener">Apache Sedona</a></div>
+          <div class="tl-item__desc">Completed over 300+ commits mainly working on the build, documentation, tests and supporting the community.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item__date">August 2024 - September 2025 · Brisbane</div>
+          <div class="tl-item__role">Manager at Not-for-profit Corporation</div>
+          <div class="tl-item__org"><a href="https://www.brisbanesocialchess.org.au" target="_blank" rel="noopener">Brisbane Social Chess Inc</a></div>
+          <div class="tl-item__desc">Elected to the first seven-man management team and took the lead hosting chess events at three different locations.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item__date">March 2024 - August 2024 · Brisbane</div>
+          <div class="tl-item__role">Event Host at Community Chess Club</div>
+          <div class="tl-item__org"><a href="https://www.brisbanesocialchess.org.au" target="_blank" rel="noopener">Brisbane Social Chess</a></div>
+          <div class="tl-item__desc">Hosted meetups every Thursday night from 6pm-8pm at a suburban hotel.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item__date">August 1st 2023 - Present · Brisbane</div>
+          <div class="tl-item__role">Apache Committer on Apache CloudStack</div>
+          <div class="tl-item__org"><a href="https://cloudstack.apache.org" target="_blank" rel="noopener">Apache CloudStack</a></div>
+          <div class="tl-item__desc">Mainly working on the build, continuous integration and website.</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-item__date">February 2009 - January 2024 · Brisbane</div>
+          <div class="tl-item__role">Agency, Client and Freelancer</div>
+          <div class="tl-item__org"><a href="https://www.upwork.com" target="_blank" rel="noopener">Upwork</a></div>
+          <div class="tl-item__desc">Worked on oDesk, Elance and finally Upwork for about 15 years.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section wrap reveal" id="contact" aria-labelledby="contact-h">
+      <div class="section-head">
+        <span class="section-head__kicker">./contact --me</span>
+        <h2 id="contact-h">Let's build something exceptional.</h2>
+        <p>Open to interesting problems, collaborations and remote work worldwide. Email is best - I read everything.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:jbampton@gmail.com">
+          <span class="ic mono" aria-hidden="true">@</span>
+          <span><span class="contact-card__label">email</span><span class="contact-card__val">jbampton@gmail.com</span></span>
+        </a>
+        <a class="contact-card" href="https://github.com/jbampton" target="_blank" rel="noopener">
+          <span class="ic mono" aria-hidden="true">⌥</span>
+          <span><span class="contact-card__label">github</span><span class="contact-card__val">@jbampton</span></span>
+        </a>
+        <a class="contact-card" href="https://gitlab.com/johnbampton" target="_blank" rel="noopener">
+          <span class="ic mono" aria-hidden="true">▤</span>
+          <span><span class="contact-card__label">gitlab</span><span class="contact-card__val">@johnbampton</span></span>
+        </a>
+        <a class="contact-card" href="https://www.youtube.com/@johnbampton" target="_blank" rel="noopener">
+          <span class="ic mono" aria-hidden="true">▶</span>
+          <span><span class="contact-card__label">youtube</span><span class="contact-card__val">@johnbampton</span></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand mono">
+        <b>committer</b>@<b>asf</b>:~$ <span class="text-dim">echo "thanks for visiting"</span>
+        <div class="footer__meta" style="margin-top:.6rem">
+          <span><span class="dot-ok">●</span> system: operational</span>
+          <span>build: static</span>
+          <button data-action="about-system" class="text-dim" style="text-decoration:underline">about this system</button>
+        </div>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="https://github.com/jbampton" target="_blank" rel="noopener">github</a>
+      </nav>
+    </div>
+    <div class="wrap" style="margin-top:1.2rem">
+      <p class="mono text-mute" style="font-size:.74rem">© 2013–<span data-year>2026</span> John Bampton. Built with HTML, CSS, vanilla JS &amp; Tailwind. <span class="text-dim">Press <kbd class="mono">Ctrl</kbd>+<kbd class="mono">K</kbd> or <kbd class="mono">`</kbd>.</span></p>
+    </div>
+  </footer>
+
+  <!-- ===================== COMMAND PALETTE ===================== -->
+  <div class="palette-overlay" id="palette-overlay" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="palette">
+      <div class="palette__input-wrap">
+        <span class="chev" aria-hidden="true">&gt;</span>
+        <input id="palette-input" type="text" placeholder="Type a command or search…" aria-label="Command palette input" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="palette__list" id="palette-list" role="listbox" aria-label="Commands"></div>
+    </div>
+  </div>
+
+  <!-- ===================== TERMINAL OVERLAY ===================== -->
+  <div class="terminal-overlay" id="terminal-overlay" role="dialog" aria-modal="true" aria-label="Interactive terminal">
+    <div class="terminal-shell">
+      <div class="win__bar">
+        <span class="win__dots"><i></i><i></i><i></i></span>
+        <span class="win__title">john@bampton: ~ - interactive shell - <span class="text-green">type 'help'</span></span>
+        <button class="icon-btn" data-action="terminal" style="margin-left:auto;width:28px;height:28px" aria-label="Close terminal">✕</button>
+      </div>
+      <div class="terminal-out" id="terminal-out" aria-live="polite"></div>
+      <div class="terminal-input-line">
+        <span class="ps1">john@bampton:~$</span>
+        <input id="terminal-input" type="text" aria-label="Terminal input" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== ABOUT-SYSTEM MODAL ===================== -->
+  <div class="modal-overlay" id="sys-modal" role="dialog" aria-modal="true" aria-labelledby="sys-h">
+    <div class="modal win">
+      <div class="win__bar">
+        <span class="win__dots"><i></i><i></i><i></i></span>
+        <span class="win__title" id="sys-h">About This System</span>
+        <button class="icon-btn" data-action="close-modal" style="margin-left:auto;width:28px;height:28px" aria-label="Close">✕</button>
+      </div>
+      <div class="win__body">
+        <div class="sysrow"><span class="sysrow__k">OS</span><span class="sysrow__v">johnbampton.os // static edition</span></div>
+        <div class="sysrow"><span class="sysrow__k">Kernel</span><span class="sysrow__v">HTML5 · CSS3 · Vanilla JS</span></div>
+        <div class="sysrow"><span class="sysrow__k">Renderer</span><span class="sysrow__v">Tailwind CDN</span></div>
+        <div class="sysrow"><span class="sysrow__k">Uptime</span><span class="sysrow__v" id="sys-uptime">—</span></div>
+        <div class="sysrow"><span class="sysrow__k">Viewport</span><span class="sysrow__v" id="sys-vp">—</span></div>
+        <div class="sysrow"><span class="sysrow__k">Pixel ratio</span><span class="sysrow__v" id="sys-dpr">—</span></div>
+        <div class="sysrow"><span class="sysrow__k">CPU</span><span class="sysrow__v" id="sys-cores">—</span></div>
+        <div style="margin-top:1rem">
+          <div class="mono text-dim" style="font-size:.74rem">engineering capacity</div>
+          <div class="bar"><i style="width:99%"></i></div>
+        </div>
+        <p class="mono text-mute" style="font-size:.72rem;margin-top:1rem">Tip: Konami code unlocks something. Try the terminal too.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

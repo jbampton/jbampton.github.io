@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Segmentation fault · John Bampton</title>
+  <meta name="description" content="404 - the page you requested could not be found.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#05080d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2305080d'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='52' font-weight='bold' fill='%2300ff9c' text-anchor='middle'%3E%26gt;_%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <main id="main" class="wrap" style="min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center">
+    <div class="win" style="max-width:560px;width:100%">
+      <div class="win__bar"><span class="win__dots"><i></i><i></i><i></i></span><span class="win__title">kernel panic - page not found</span></div>
+      <div class="win__body" style="padding:2.4rem 1.6rem">
+        <p class="mono text-amber" style="font-size:.8rem">Exception: HTTP 404</p>
+        <h1 class="glow-text" style="font-size:clamp(3rem,12vw,6rem);font-weight:900;line-height:1;margin:.4rem 0 .2rem;color:var(--green)">404</h1>
+        <p class="mono text-dim" style="margin-bottom:1.6rem">$ cat requested_page &gt; /dev/null<br>segmentation fault (core dumped)</p>
+        <p style="color:var(--text-dim);margin-bottom:1.8rem">This route doesn't exist in the file system. Let's get you back to a known-good state.</p>
+        <div class="hero__cta" style="justify-content:center">
+          <a class="btn btn--primary" href="index.html">▸ cd ~/home</a>
+          <a class="btn btn--ghost" href="projects.html">browse projects</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
